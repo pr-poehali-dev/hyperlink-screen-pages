@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   const articles = [
     {
       id: 1,
@@ -150,6 +152,7 @@ const Index = () => {
             {articles.map((article, index) => (
               <Card
                 key={article.id}
+                onClick={() => navigate(`/article/${article.id}`)}
                 className={`
                   group relative overflow-hidden cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl
                   ${article.size === 'large' ? 'md:col-span-2 md:row-span-2' : ''}
@@ -180,13 +183,10 @@ const Index = () => {
                   
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-200">
                     <span className="text-sm text-slate-500">{article.date}</span>
-                    <a 
-                      href={`#article-${article.id}`}
-                      className="text-purple-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all"
-                    >
+                    <span className="text-purple-600 font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
                       Читать
                       <Icon name="ArrowRight" size={16} />
-                    </a>
+                    </span>
                   </div>
                 </div>
               </Card>
