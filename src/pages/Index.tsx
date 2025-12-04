@@ -69,7 +69,7 @@ const Index = () => {
                 B
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent italic">
-                CreativeBlog
+                Шарофжон
               </span>
             </div>
             <div className="flex gap-6 items-center">
@@ -83,10 +83,10 @@ const Index = () => {
                 onClick={() => scrollToSection('about')}
                 className="text-slate-700 hover:text-purple-600 transition-colors font-medium"
               >
-                О блоге
+                Обо мне
               </button>
               <a 
-                href="mailto:hello@creativeblog.com"
+                href="mailto:sharofjon@example.com"
                 className="text-slate-700 hover:text-purple-600 transition-colors"
               >
                 <Icon name="Mail" size={20} />
@@ -115,7 +115,7 @@ const Index = () => {
                 <span className="block text-slate-900">дизайн</span>
               </h1>
               <p className="text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed">
-                Блог о креативных решениях, необычных подходах и вдохновляющих идеях в мире дизайна и разработки
+                Персональный блог Шарофжона о креативных решениях, необычных подходах и вдохновляющих идеях в мире дизайна и разработки
               </p>
               <div className="flex gap-4">
                 <Button 
@@ -206,19 +206,18 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium transform rotate-2">
-                🚀 О проекте
+                👨‍💻 Обо мне
               </div>
               
               <h2 className="text-6xl font-bold leading-tight">
-                Место, где идеи
+                Привет, я
                 <span className="block italic bg-gradient-to-r from-pink-300 to-orange-300 bg-clip-text text-transparent transform -rotate-2 inline-block">
-                  оживают
+                  Шарофжон
                 </span>
               </h2>
               
               <p className="text-xl text-purple-100 leading-relaxed">
-                CreativeBlog — это пространство для тех, кто ищет вдохновение и нестандартные решения. 
-                Мы делимся опытом, исследуем тренды и создаём контент, который вдохновляет на творчество.
+                Дизайнер и разработчик, создающий вдохновляющий контент о креативных решениях, современных подходах в дизайне и веб-разработке.
               </p>
               
               <div className="space-y-4 pt-6">
@@ -227,8 +226,8 @@ const Index = () => {
                     🎯
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Качественный контент</h3>
-                    <p className="text-purple-200">Глубокие статьи от практикующих дизайнеров и разработчиков</p>
+                    <h3 className="font-bold text-lg mb-1">Мой опыт</h3>
+                    <p className="text-purple-200">Делюсь практическими знаниями в дизайне и разработке</p>
                   </div>
                 </div>
                 
@@ -237,8 +236,8 @@ const Index = () => {
                     💡
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Свежие идеи</h3>
-                    <p className="text-purple-200">Актуальные тренды и инновационные подходы</p>
+                    <h3 className="font-bold text-lg mb-1">Творческий подход</h3>
+                    <p className="text-purple-200">Нестандартные решения и вдохновляющие проекты</p>
                   </div>
                 </div>
                 
@@ -247,8 +246,8 @@ const Index = () => {
                     ✨
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Креативное сообщество</h3>
-                    <p className="text-purple-200">Обмен опытом и вдохновение от единомышленников</p>
+                    <h3 className="font-bold text-lg mb-1">Вдохновение</h3>
+                    <p className="text-purple-200">Делюсь историями и инсайтами из мира дизайна</p>
                   </div>
                 </div>
               </div>
@@ -256,20 +255,23 @@ const Index = () => {
 
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="space-y-6">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
-                    <h4 className="font-bold text-2xl mb-2">500+</h4>
-                    <p className="text-purple-200">Опубликованных статей</p>
-                  </div>
+                <div className="aspect-square bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="text-8xl">👨‍💻</div>
+                </div>
+                <div className="space-y-4 text-center">
+                  <h3 className="text-3xl font-bold">Сотиболдиев Шарофжон</h3>
+                  <p className="text-purple-200">Дизайнер & Разработчик</p>
                   
-                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
-                    <h4 className="font-bold text-2xl mb-2">10K+</h4>
-                    <p className="text-purple-200">Постоянных читателей</p>
-                  </div>
-                  
-                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
-                    <h4 className="font-bold text-2xl mb-2">50+</h4>
-                    <p className="text-purple-200">Авторов со всего мира</p>
+                  <div className="flex gap-4 justify-center pt-4">
+                    <a href="mailto:sharofjon@example.com" className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Icon name="Mail" size={20} />
+                    </a>
+                    <a href="#" className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Icon name="Github" size={20} />
+                    </a>
+                    <a href="#" className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Icon name="Linkedin" size={20} />
+                    </a>
                   </div>
                 </div>
               </div>
